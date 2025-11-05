@@ -6,11 +6,11 @@ let inDistancia=document.getElementById('inDistancia');
 let inValor=document.getElementById('inValor');
 let botao=document.getElementById('botSalvar')
 let msg=document.getElementById('msg')
-botao.addEventListener('click', salvarViagem=>{
-    salvarViagem.preventDefault();
+botao.addEventListener('click', e=>{
+    e.preventDefault();
 
     const origem=inOrigem.value;
-    const destino=inDestino.valu;
+    const destino=inDestino.value;
     const distancia=Number(inDistancia.value);
     const valor=Number(inValor.value);
 
@@ -28,6 +28,7 @@ botao.addEventListener('click', salvarViagem=>{
     localStorage.setItem('viagens', JSON.stringify(viagens));
     msg.textContent="Viagem salva com sucesso!"
     msg.style.color='lime';
+    setTimeout(()=>msg.textContent='', 3000)
 
     form.reset();
 
