@@ -56,8 +56,9 @@ O visual foi inspirado em **painéis de transporte/logística**, com:
 
 ---
 
+## 🖥️ Visual do Projeto
+![Tela principal](asstes/tela-inicial.jpg)
+
 ## 🧩 Como Executar
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seuusuario/controle-de-viagens.git
+1. Acesse ele em: valdinei.github.io/Controle-de-Viagens/
