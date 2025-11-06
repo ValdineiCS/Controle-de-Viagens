@@ -57,7 +57,7 @@ O visual foi inspirado em **painéis de transporte/logística**, com:
 ---
 
 ## 🖥️ Visual do Projeto
-![Tela principal](asstes/tela-inicial.jpg)
+![Tela principal](assets/tela-inicial.jpg)
 
 ## 🧩 Como Executar
 
