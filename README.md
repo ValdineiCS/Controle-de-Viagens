@@ -56,9 +56,6 @@ O visual foi inspirado em **painéis de transporte/logística**, com:
 
 ---
 
-## 🖥️ Visual do Projeto
-![Tela principal](assets/tela-inicial.jpg)
-
 ## 🧩 Como Executar
 
 1. Acesse ele em: valdinei.github.io/Controle-de-Viagens/
