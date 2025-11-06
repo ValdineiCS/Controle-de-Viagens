@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+    
+        
+
+    main{
+        display: flex;
+        justify-content: center;
+    }
+
+    #lista{
+        display: flex;
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    
+    
+    .card{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    background-color: #11151c;
+    color:#56CCF2;
+    border: 1px solid rgba(47, 128, 237, 0.2);
+    padding: 10px;
+    border-radius: 6px;
+    margin:10px 0;
+}
+
+
+
+
+</style>
+    <title>Lista de Viagens</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Viagens</h1>
+
+        <nav>
+            <a href="index.html">Home</a>|
+            <a href="cadastro.html">Cadastrar Viagem</a>
+            <a href="graficos.html">Gráficos</a>|
+           
+            
+        </nav>
+    </header>
+
+    <main>
+        <section id="lista">
+            <input type="text" name="" id="filtro" placeholder="Buscar por origem ou destino">
+            <input type="button" name="" id="btnBuscar" value="Buscar">
+            <input type="button" name="" id="btnResetar" value="Mostrar todas">
+        </section>
+
+        <h3 id="lista"></h3>
+    </main>
+
+    <script src="lista.js"></script>
+    
+</body>
+</html>

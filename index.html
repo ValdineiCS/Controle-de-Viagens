@@ -5,17 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Controle de Viagens</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items:  center;
+            flex-direction: column;
+        }
+
+        main{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="cadastro.html">Cadastrar Viagem</a>
-            <a href="lista.html">Listar Viagens</a>
-            <a href="graficos.html">Gráficos</a>
 
+        <h1>Controle de Viagens</h1>
+        <nav>
+           
+            <a href="cadastro.html">Cadastrar Viagem</a>|
+            <a href="lista.html">Listar Viagens</a>|
+            <a href="graficos.html">Gráficos</a>
         </nav>
     </header>
+
+    <main class="home">
+        <h2>Bem-Vindo ao Painel de Controle</h2>
+        <p>Gerencie suas rotas, visualize custos e acompanhe seus trajetos de forma prática e moderna.</p>
+
+        <div id="resumo" class="resumo">
+            <h3>Total de viagens: <span id="qtd">0</span></h3>
+
+            <h3>Valor total: <span id="valor">R$ 0,00</span></h3>
+        </div>
+        <a href="cadastro.html" class="btn-desta1que">+ Nova Viagem</a>
+    </main>
+
+    <script src="home.js"></script>
     
 </body>
 </html>

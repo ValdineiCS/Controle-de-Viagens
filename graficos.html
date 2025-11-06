@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+     <style>
+     
+     
+     main{
+      display: flex;
+      align-items: center;
+      flex-direction: column;  
+     }    
+        
+    canvas {
+  background: #11151c;
+  box-shadow: 0 0 15px rgba(47, 128, 237, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  width: 85% !important;
+  max-width: 600px;
+  height: 400px !important;
+  border-radius: 10px;
+ 
+ 
+}
+
+
+
+#resumo{
+    font-size:18px;
+    color:#56CCF2;
+    background: rgba(202, 171, 102, 0.1);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+     </style>
+</head>
+<body>
+    <header><h1>Dashboard de Viagens</h1>
+    <nav>
+    <a href="index.html">Home</a> |
+      <a href="cadastro.html">Cadastrar Viagem</a> |
+      <a href="lista.html">Lista de Viagens</a>
+    </nav>
+</header>
+
+<main style="padding: 20px;">
+    <canvas id="graficoCustos" width="'400" height="200"></canvas>
+    <p id="resumo" style="margin-top: 20px;"></p>
+</main>
+
+<script src="graficos.js"></script>
+</body>
+</html>

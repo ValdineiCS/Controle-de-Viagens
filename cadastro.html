@@ -1,20 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cadastrar Viagem</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        a{
+            background-color: #2F80ED;
+            color: #E0E0E0;
+            text-decoration: none;
+            margin: 3px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        a:hover{
+            color: black;
+            background-color: aliceblue;
+            transition: 0.3s;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10PX;
+        }
+
+        input{
+            text-align: center;
+            padding: 3px;
+            border-radius: 7px;
+            margin: 3px;
+            width: 250px;
+            max-width: auto;
+        }
+        #botSalvar{
+            width: 125px;
+            background-color: #2F80ED;
+            color: #E0E0E0;
+        }
+
+        #botSalvar:hover{
+            color: black;
+            background-color: aliceblue;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        #msg{
+            display: flex;
+            justify-content: center;
+        }
+       
+    </style>
 </head>
 <body>
     <header>
     <h1>Cadastro de Viagens</h1>
+
+            <nav>
+                <a href="index.html">Home</a>|
+                <a href="lista.html">Lista de Viagens</a>|
+                <a href="graficos.html">Gráficos</a>
+            </nav>
+
+
         </header>
 
         <form action id="formViagem">
-            <p>Origem: <input type="text" name="" id="inOrigem"></p>
-            <p>Destino: <input type="text" name="" id="inDestino"></p>
-            <p>Distância (KM): <input type="text" name="" id="inDistancia"></p>
-            <p>Valor gasto: <input type="text" name="" id="inValor"></p>
+            <input type="text" name="" id="inOrigem" placeholder="Origem...">
+            <input type="text" name="" id="inDestino" placeholder="Destino...">
+            <input type="text" name="" id="inDistancia" placeholder="Distância (KM)...">
+            <input type="text" name="" id="inValor" placeholder="Valor Gasto...">
 
             <input type="button" name="" id="botSalvar" value="Salvar Viagem">
         </form>
